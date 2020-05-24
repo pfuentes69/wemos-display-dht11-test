@@ -22,7 +22,7 @@ void loop()
   delay(dht.getMinimumSamplingPeriod());
 
   float humidity = dht.getHumidity();
-  float temperature = dht.getTemperature();
+  float temperature = dht.getTemperature() * 0.9;
 
   display.clearDisplay();
   display.setTextSize(1);
